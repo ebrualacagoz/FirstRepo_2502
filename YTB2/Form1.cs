@@ -11,5 +11,14 @@ namespace YTB2
         {
             MessageBox.Show("Test");
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string username = "Ahmet Aksakal";
+            if (string.IsNullOrEmpty(username))
+            {
+                throw new Exception("Hata");
+            }
+        }
     }
 }
